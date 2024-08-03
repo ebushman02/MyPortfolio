@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  p { 
+    font-size:1.6rem ;}
+
+  
+  
+  
+  .App {
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    background-color: rgba(0,0,0,.3);
+    color: black;
+    background:  url('../public/images/clouds.jpg') no-repeat center center/cover !important;
+    height:100%
+  }
+  
+  .App:before {
+    content: ' ';
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+
+  
+  .weather-container{
+    max-width: 700px;
+    margin: auto;
+    padding: 0 1rem;
+    position: relative;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .App .top{
+    width: 100%;
+    margin: 1rem auto;
+  }
+  
+  .App .description{
+    position: relative;
+    right:-90%;
+    transform-origin: 0 0;
+    transform: rotate(270deg);
+  }
+  
+  .App .bottom {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: rgba(255,255,255,.5);
+  }
+  .bold{
+    font-weight: 700;
+  }
+  
+  .App .search {
+    text-align: center;
+    padding: 1rem;
+  
+  }
+  
+  .App input{
+    padding: .7rem;
+    font-size: 1.25rem; 
+    border: 1.25px solid;
+    background: rgba(255,255,255,.4);
+    border-radius: 25px;
+    position: relative;
+    margin: .7rem;
+    width: 230px;
+    
+  }
+  
+  ::placeholder {
+    color:black
+  }
+  
+  .App button{
+    padding: .7rem;
+    font-size: 1.25rem;
+    border-radius: 25px;
+    margin: .7rem;
+    border: 1.25px solid;
+    background:  rgba(255,255,255,.1);
+    width: 230px;
+  }
+  
+  .App button:hover{
+    background:rgba(255,255,255,0)
+  }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+   
+  
+  #nav-link:hover{
+    color: rgba(255,255,255,.7);
+  
+  }
+  
+  #nav-link{
+    text-decoration: none !important;
+    color:#f8f8f8;
+    height: 50px;
+    padding: 0;
+    margin: 1rem;
+  
+  }
+  
+  
